@@ -1,0 +1,77 @@
+{{#if tokenIsPresent}}
+<div class="container-fluid" id="homeContent">
+    {{#each arrRecipes}}
+    <div class="elementIngridient">
+        <div class="homeTitle">
+            <h4>{{title}}</h4>
+            {{#if (eq category 'breakfast')}}
+            <div class="Lunches">
+                <button class="Breakfast" id="lunchContent" data-lunch="breakfast">Завтрак</button>
+            </div>
+            {{else if (eq category 'lunch')}}
+            <div class="Lunches">
+                <button class="Lunch" id="lunchContent" data-lunch="lunch">Обед</button>
+            </div>
+
+            {{else if (eq category 'supper')}}
+            <div class="Lunches">
+                <button class="Supper" id="lunchContent" data-lunch="supper">Ужин</button>
+            </div>
+            {{else if (eq category 'snack')}}
+            <div class="Lunches">
+                <button class="Snack" id="lunchContent" data-lunch="snack">Перекус</button>
+            </div>
+            {{/if}}
+        </div>
+        <div class="homeConteiner">
+            <img src="/{{img}}" alt="">
+            <p>{{description}} <button class="fullDescription" data-id="{{_id}}" data-title="{{title}}">читать далее...</button> </p>
+        </div>
+
+        <div class="likesContent">
+            <input type="hidden" name="action" value="like">
+            <input type="hidden" name="recipesId" value="{{_id}}">
+            <div class="like">
+                <div class="btnLike">
+                    <button type="submit" data-id="{{_id}}" class="likeBtnContent">
+                        <img src="/like-icon-png.gif" alt="" class="likeImg">
+                    </button>
+                </div>
+                {{#if likes}} 
+                <div class="pLike">
+                    <p> + {{likes}}</p>
+                </div>
+                <div class="addLikes"></div>
+                {{/if}}
+            </div>
+            <p class="homeLogin">{{login}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<div class="pagination"></div>
+{{else}}
+{{#if arrRecipes}}
+<div class="container-fluid" id="homeContent">
+    {{#each arrRecipes}}
+    <div class="elementIngridient">
+        <div class="homeTitle">
+            <h4>{{title}}</h4>
+        </div>
+        <div class="homeConteiner">
+            <img src="/{{img}}" alt="">
+            <p>{{description}} <button class="fullDescription" data-id="{{_id}}" data-title="{{title}}">читать далее...</button> </p>
+        </div>
+        <div class="likesContentNoTokken">
+            <p class="homeLoginNoTokken">{{login}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<div class="pagination"></div>
+{{/if}}
+{{/if}}
+
+
+
+

@@ -1,0 +1,80 @@
+{{#if tokenIsPresent}}
+<div class="container-fluid">
+    <div class="createRecipesContainer">
+        <h4 class="h1-title">Редактировать рецепт</h4>
+        <div class="form signup" id="formTest">
+            <img src="/{{recipes.img}}" alt="" class="recipesEditImg">
+            <form action="" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="userId" value="{{user._id}}">
+                <input type="hidden" name="id" value="{{recipes._id}}">
+                <div class="article-details">
+                    <p class="article-subtitle">Название</p>
+                    <input type="text" name="title" class="article-title-input" value="{{recipes.title}}" />
+                    <p>Описание</p>
+                    <textarea cols="30" rows="2" name="description" id="description">{{recipes.description}}</textarea>
+                    <p class="article-subtitle">Приготовление</p>
+                    <textarea name="preparation" cols="30" rows="5"
+                        class="article-description-textarea">{{recipes.preparation}}</textarea>
+                    <div class="recipesIngridients">
+                        {{#each recipes.ingridients}}
+                        <div class="homeIngridients">
+                            <div class="ingridientsTitle">
+                                <p>{{name}}</p>
+                            </div>
+                            <div class="ingridientsDefis">
+                                <p></p>
+                            </div>
+                            <div class="ingridientsNumber">
+                                <input class="number" value="{{number}}"></input>
+                                <p>{{measurement}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <button class="removeIngtidients">Удалить ингредиенты</button>
+                    <div class="contentBodyRecies"></div>
+                    <button class="btnEditIngridient" style="display: none;">Добавить ингредиент</button>
+                    <div class="h6categoryRecipes">
+                        <h6>Выбрать категорию</h6>
+                    </div>
+                    <div class="categoryRecipes">
+                        <div class="selectsCategory">
+                            <p>Рецепт</p>
+                            <select name="category" id="">
+                                <option>Завтрак</option>
+                                <option>Обед</option>
+                                <option>Ужин</option>
+                                <option>Перекус</option>
+                            </select>
+                        </div>
+                        <div class="selectsCategory">
+                            <p>Блюдо</p>
+                            <select name="dush" id="">
+                                <option>Мясо</option>
+                                <option>Птица</option>
+                                <option>Рыба</option>
+                                <option>Супы</option>
+                                <option>Каши</option>
+                                <option>Салаты</option>
+                                <option>Овощи</option>
+                                <option>Выпечка</option>
+                            </select>
+                        </div>
+                        <div class="selectsCategories">
+                            <p>Порции</p>
+                            <input type="number" name="servings" value="1">
+                        </div>
+                        <div class="fileCategory">
+                            <p>Фотография</p>
+                            <input type="file" id="fileInput" name="image" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="submit-button" value="Редактировать рецепт" />
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{/if}}

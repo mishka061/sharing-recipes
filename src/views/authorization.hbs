@@ -1,0 +1,30 @@
+<div class="container-authorization">
+  <h2>Авторизация</h2>
+  <form class="form-signap" action="" method="post">
+    <div class="content-authorization">
+      <div class="input-box">
+        <span class="details">Электронная почта</span>
+        <input type="email" id="emailInput" name="email" class="form-control" autocomplete="email" required />
+      </div>
+      <div class="input-box">
+        <span class="details">пароль</span>
+        <div class="password-toggle">
+          <input type="password" id="passwordInput" name="password" class="form-control password-input"
+            autocomplete="new-password" required />
+          <label class="show-password-label">
+            <input type="checkbox" class="password-checkbox" id="passwordCheckbox"
+              onclick="togglePasswordAuthorizVisibility()">
+            Показать пароль
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      {{#if errorAuthorization}}
+      <div class="errorAuthorization">{{errorAuthorization}}</div>
+      {{/if}}
+      <input type="submit" name="submit" value="Войти">
+    </div>
+    <p class="messageAuthorization">Новый пользователь? <a href="/registration">Создать новую учетную запись</a></p>
+  </form>
+</div>

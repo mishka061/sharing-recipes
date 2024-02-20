@@ -1,0 +1,57 @@
+<div class="container-fluid">
+    <div class="createRecipesContainer">
+        <h4 class="h1-title">Добавить рецепт</h4>
+        <div class="form signup" id="formTest">
+            <form action="/create" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="userId" value="{{user._id}}">
+                <div class="article-details">
+                    <p class="article-subtitle">Название</p>
+                    <input type="text" name="title" class="article-title-input" />
+                    <p>Описание</p>
+                    <textarea cols="30" rows="2" name="description" id="description"></textarea>
+                    <p class="article-subtitle">Приготовление</p>
+                    <textarea name="preparation" cols="30" rows="4" class="article-description-textarea"></textarea>
+                    <div class="contentBodyRecies"></div>
+                    <button class="btnAddIngridient">Добавить ингредиент</button>
+                    <div class="h6categoryRecipes">
+                        <h6>Выбрать категорию</h6>
+                    </div>
+                    <div class="categoryRecipes">
+                        <div class="selectsCategory">
+                            <p>Рецепт</p>
+                            <select name="category" id="">
+                                <option value="breakfast">Завтрак</option>
+                                <option value="lunch">Обед</option>
+                                <option value="supper">Ужин</option>
+                                <option value="snack">Перекус</option>
+                            </select>
+                        </div>
+                        <div class="selectsCategory">
+                            <p>Блюдо</p>
+                            <select name="dush" id="">
+                                <option value="meat">Мясо</option>
+                                <option value="bird">Птица</option>
+                                <option value="fish">Рыба</option>
+                                <option value="soups">Супы</option>
+                                <option value="porridge">Каши</option>
+                                <option value="salads">Салаты</option>
+                                <option value="vegetables">Овощи</option>
+                                <option value="bakery">Выпечка</option>
+                            </select>
+                        </div>
+                        <div class="selectsCategories">
+                            <p>Порции</p>
+                            <input type="number" name="servings" value="1">
+                        </div>
+                        <div class="fileCategory">
+                            <p>Фотография</p>
+                            <input type="file" id="fileInput" name="image" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="submit-button" value="Добавить рецепт" />
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>

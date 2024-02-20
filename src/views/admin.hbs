@@ -1,0 +1,36 @@
+{{#if tokenIsPresent}}
+<div class="container-fluid" id="homeContent">
+    {{#each arrRecipes}}
+    <div class="elementIngridient">
+        <div class="homeTitle">
+            <h4>{{title}}</h4>
+            {{#if (eq category 'Завтрак')}}
+            <div class="Lunches">
+                <button class="Breakfast"><a href="/category/Breakfast" data-lunch="Завтрак">{{category}}</a></button>
+            </div>
+            {{else if (eq category 'Обед')}}
+            <div class="Lunches">
+                <button class="Lunch"><a href="/category/Lunch" data-lunch="Обед">{{category}}</a></button>
+            </div>
+            {{else if (eq category 'Ужин')}}
+            <div class="Lunches">
+                <button class="Supper"><a href="/category/Supper" data-lunch="Ужин">{{category}}</a></button>
+            </div>
+            {{else if (eq category 'Перекус')}}
+            <div class="Lunches">
+                <button class="Snack"><a href="/category/Snack" data-lunch="Перекус">{{category}}</a></button>
+            </div>
+            {{/if}}
+        </div>
+        <div class="homeConteiner">
+            <img src="/{{img}}" alt="">
+            <p>{{description}} <button class="fullDescription" data-id="{{_id}}" data-title="{{title}}">читать далее...</button> </p>
+        </div>
+        <div class="editContent">
+            <button class="btnEdit"><a href="/edit/{{_id}}">Редактировать</a></button>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<div class="pagination"></div>
+{{/if}}

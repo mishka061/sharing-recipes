@@ -1,0 +1,1032 @@
+.createRecipesContainer{
+    margin: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border:2px solid #aaaaaa;
+}
+.article-title-input,
+.article-description-textarea{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.article-details p{
+    margin-bottom: 0;
+}
+.btnAddIngridient,
+.btnEditIngridient,
+.submit-button{
+    margin: 10px 0;
+    border: 2px solid blue;
+    color: blue;
+    border-radius: 5px;
+}
+.btnAddIngridient:hover,
+.btnEditIngridient:hover,
+.submit-button:hover{
+    background-color:  blue;
+    color: rgb(255, 255, 255);
+}
+.removeIngtidients{
+    margin: 10px 0;
+    border: 2px solid rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    border-radius: 5px;
+}
+.removeIngtidients:hover{
+    background-color:  rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.btnAddIngridient,
+.btnEditIngridient,
+.submit-button{
+    padding: 3px 10px;
+    width: 40%;
+    text-align: start;
+}
+.imgDellSelect{
+    width: 40px;
+}
+.divSelect{
+    padding: 10px 0;
+    border-bottom: 2px solid blue;
+}
+.contentNumber{
+    display: flex;
+    flex-direction: row;
+}
+#description{
+    width: 100%;
+}
+.numberCategory{
+    background-color: #967272;
+}
+#ingredientSelect{
+    width: 50%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.numberSelect select{
+    width: 100%;
+    padding: 2px;
+}
+.numberInput{
+   padding-left: 30px;
+}
+.numberInput input{
+    width: 51%;
+}
+.h1-title{
+    color: blue;
+    border-bottom: 1px dotted blue;
+    padding-bottom: 10px;
+}
+.categoryRecipes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px dotted blue;
+    padding-bottom: 10px;
+}
+.selectsCategory{
+    margin-right: 10px;
+    color: blue;
+}
+.selectsCategories{
+    width: 15%;
+    color: blue;
+}
+.selectsCategories input{
+    width: 100%;
+    border: 2px solid blue;
+    padding: 2px;
+    border-radius: 5px;
+}
+.h6categoryRecipes{
+    border-top: 1px dotted blue;
+    padding-top: 10px;
+}
+.selectsCategory select{
+    width: 100%;
+    border: 2px solid blue;
+    padding: 2px;
+    border-radius: 5px;
+}
+.fileCategory{
+    color: blue;
+    width: 23%;
+}
+.categoryFile{
+    border-bottom: 1px dotted blue;
+    padding-bottom: 10px;
+}
+input[type=file]{
+    color:transparent;
+    border: 2px solid blue;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.navHeaderContainer {
+  border-bottom: 1px solid rgb(184, 184, 184);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.centerImages {
+  width: 400px;
+}
+.centerImages img {
+  width: 90%;
+  margin: 10px;
+}
+.contentLeft {
+  display: flex;
+  flex-direction: row;
+}
+.headerImages {
+  width: 100px;
+}
+.headerImages img {
+  width: 80%;
+  margin: 10px 40px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+}
+@media screen and (max-width: 480px) {
+}
+
+.elementIngridient {
+  background-color: #e9e9e986;
+  border: 1px solid gray;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+.homeConteiner img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.homeTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.homeConteiner {
+  display: flex;
+  flex-direction: row;
+}
+.homeLogin {
+  text-align: end;
+  margin-bottom: 0;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+}
+.page-link {
+  margin-right: 5px;
+  background: #dbdbdb;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+  border-color: rgb(82, 82, 82);
+  margin-left: 5px;
+}
+.page-link.active {
+  background-color: #949494;
+  color: #fff;
+  border-color: #999999;
+}
+.footer {
+  padding: 5px;
+  background-color: #000000;
+  height: 40px;
+  color: white;
+  text-align: center;
+}
+.likeImg {
+  width: 40px;
+}
+.like {
+  display: flex;
+  flex-direction: row;
+}
+.likesContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.likeBtnContent {
+  margin-top: 5px;
+  border: none;
+}
+.Breakfast,
+.Lunch,
+.Supper,
+.Snack,
+.homeLogin,
+.pLike p {
+  margin-top: 15px;
+  font-size: 15px;
+}
+.Breakfast {
+  background-color: #daff079a;
+  border-radius: 10px;
+}
+.Lunch {
+  background-color: #01ffff8f;
+  border-radius: 10px;
+}
+.Supper {
+  background-color: #51ff018f;
+  border-radius: 10px;
+}
+.Snack {
+  background-color: #dd00fa94;
+  border-radius: 10px;
+}
+.Breakfast a,
+.Lunch a,
+.Supper a,
+.Snack a {
+  text-decoration: none;
+  color: #000;
+}
+
+#homeContent {
+  min-height: 500px;
+  width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.homeTitle h4 {
+  font-size: 22px;
+}
+.homeConteiner p {
+  padding-left: 20px;
+  font-size: 16px;
+}
+.homeLoginNoTokken {
+  font-size: 16px;
+}
+.fullCategoryDescription,
+.fullDescription {
+  background-color: #e9e9e900;
+  color: blue;
+  border: none;
+}
+.categoryAddLunch {
+  margin: 10px 0;
+  text-align: center;
+}
+.categoryAddLunch h1 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #homeContent {
+    max-width: 1000px;
+  }
+  .homeConteiner img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+  }
+  .homeTitle h4 {
+    font-size: 21px;
+  }
+  .homeConteiner p {
+    padding-left: 19px;
+    font-size: 15px;
+  }
+  .homeLoginNoTokken {
+    font-size: 15px;
+  }
+  .likeImg {
+    width: 35px;
+  }
+  .Breakfast,
+  .Lunch,
+  .Supper,
+  .Snack,
+  .homeLogin,
+  .pLike p {
+    font-size: 15px;
+  }
+  .categoryAddLunch h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  #homeContent {
+    max-width: 98%;
+  }
+  .homeConteiner img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+  }
+  .homeTitle h4 {
+    font-size: 20px;
+    /* color: blue; */
+  }
+  .homeConteiner p {
+    padding-left: 18px;
+    font-size: 15px;
+  }
+  .homeLoginNoTokken {
+    font-size: 15px;
+  }
+  .likeImg {
+    width: 30px;
+  }
+  .Breakfast,
+  .Lunch,
+  .Supper,
+  .Snack,
+  .homeLogin,
+  .pLike p {
+    font-size: 15px;
+  }
+  .categoryAddLunch h1 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #homeContent {
+    max-width: 98%;
+  }
+  .homeConteiner img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .homeTitle h4 {
+    font-size: 18px;
+    color: blue;
+  }
+  .homeConteiner p {
+    padding-left: 15px;
+    font-size: 13px;
+  }
+  .homeLoginNoTokken {
+    font-size: 13px;
+  }
+  .likeImg {
+    width: 28px;
+  }
+  .Breakfast,
+  .Lunch,
+  .Supper,
+  .Snack,
+  .homeLogin,
+  .pLike p {
+    font-size: 13px;
+  }
+  .categoryAddLunch h1 {
+    font-size: 18px;
+  }
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+.navRegistrHeader {
+  display: flex;
+  flex-direction: row;
+}
+.navRegistrImages img {
+  width: 120px;
+  height: auto;
+  margin: 10px 10px 10px 40px;
+}
+.menuRegistr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menuRegistr a {
+  padding: 2px 4px;
+  color: #aaaaaa;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 2px solid #aaaaaa;
+  margin: 2px;
+}
+.menuRegistr a:hover {
+  background: #aaaaaa;
+  color: #050801;
+}
+footer {
+  margin-top: auto;
+}
+.footerRegistration {
+  padding: 5px;
+  background-color: #000000;
+  height: 40px;
+  color: white;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+.container-authorization {
+  margin-top: 80px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #aaaaaa;
+}
+.container-registration {
+  margin: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #aaaaaa;
+}
+.input-box {
+  margin-bottom: 10px;
+}
+form .button {
+  height: 45px;
+  margin: 15px 0 0;
+}
+form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #aaaaaa;
+  background-color: #aaaaaa;
+}
+form .button input:hover {
+  background-color: #cccccc83;
+  color: rgb(3, 3, 3);
+}
+.message {
+  text-align: center;
+  padding: 10px;
+}
+.message a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+.password-toggle {
+  display: grid;
+  grid-template-rows: auto;
+  text-align: left;
+}
+.input-box span {
+  font-size: 16px;
+}
+.form-control {
+  margin-top: 5px;
+}
+.show-password-label {
+  color: rgb(158, 157, 157);
+}
+.errorEmail,
+.errorLogin,
+.errorLoginEndEmail {
+  padding-top: 10px;
+  text-align: center;
+  color: red;
+  font-size: 18px;
+  animation: shake 0.4s;
+}
+.errorAuthorization {
+  padding-bottom: 5px;
+  text-align: center;
+  color: red;
+  font-size: 18px;
+  animation: shake 0.4s;
+}
+.messageAuthorization {
+  text-align: center;
+  padding-top: 30px;
+  margin: 10px;
+}
+.messageAuthorization a {
+  margin-left: 10px;
+}
+
+#confirmPasswordError {
+  display: none;
+  color: red;
+  font-size: 18px;
+  animation: shake 0.4s;
+}
+.selectOptions {
+  margin-top: 10px;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+#error-message {
+  display: none;
+  color: red;
+  font-size: 20px;
+  animation: shakes 0.4s;
+}
+@keyframes shakes {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+.show-password-label {
+  margin-top: 5px;
+}
+.spanRadio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.radioConteiner {
+  width: 45%;
+}
+.spanRadioDiv {
+  margin: 0 0 10px;
+  text-align: start;
+  border: 2px solid #aaaaaa;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.spanRadioDiv span {
+  padding: 5px;
+}
+.spanRadioDiv img,
+.messageBtnContent img {
+  width: 14px;
+  height: 14px;
+  margin-bottom: 2px;
+}
+.tooltip-toggle {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text,
+.tooltip-text-questions {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 256px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltip-toggle-questions:hover .tooltip-text-questions,
+.tooltip-toggle-questions:focus .tooltip-text-questions,
+.tooltip-toggle:hover .tooltip-text,
+.tooltip-toggle:focus .tooltip-text {
+  display: block;
+}
+.tooltip-toggle-questions {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .menuRegistr a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menuRegistr a {
+    font-size: 12px;
+  }
+}
+
+.imgNotFound {
+  margin-top: 100px;
+}
+.imgNotFound img {
+  width: 100%;
+}
+.contentMainMenu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.containerMenu {
+  border: 1px solid gray;
+  text-align: center;
+}
+.containerMenu img {
+  width: 40px;
+}
+.containerMenu button {
+  font-size: 16px;
+  border: none;
+  background-color: #fff;
+  color: blue;
+}
+.recipesIdConteiner {
+  display: flex;
+  flex-direction: row;
+}
+.recipesIdConteiner img {
+  width: 300px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.homeIngridients {
+  background-color: #ffffff9c;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  margin: 10px 0 0 0;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.ingridientsTitle p,
+.ingridientsNumber p,
+.ingridientsDefis p {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.ingridientsNumber {
+  display: flex;
+  flex-direction: row;
+  width: 130px;
+}
+
+.NumberServings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-right: 63px;
+}
+.NumberServings button {
+  width: 35px;
+  height: 30px;
+}
+.NumberServings input {
+  width: 50px;
+  height: 30px;
+}
+.number {
+  width: 50px;
+}
+
+.homeConteiner img {
+  width: 100%;
+}
+#recipesIdContent {
+  width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.recipesIdelementIngridient {
+  max-width: 100%;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #aaaaaa;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.recipesIdTitle h3 {
+  font-size: 22px;
+}
+.recipesComment p,
+.recipesIdConteiner p,
+.preparationRecipes p,
+.homeIngridients p,
+.number,
+.NumberServings p,
+.servings {
+  font-size: 16px;
+}
+.recipesIdelementIngridient h6 {
+  font-size: 18px;
+}
+.textCommentBtn {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid blue;
+  color: blue;
+  border-radius: 5px;
+}
+.textCommentBtn:hover,
+.textAreaSubmit:hover {
+  background-color: blue;
+  color: rgb(255, 255, 255);
+}
+.textAreaCommit {
+  width: 100%;
+}
+.textAreaSubmit {
+  width: 100%;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid blue;
+  color: blue;
+  border-radius: 5px;
+}
+.commentForm {
+  background-color: #ffffff9c;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #aaaaaa;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.commentForm p {
+  margin-bottom: 0;
+}
+.recipes-form-image {
+  color: transparent;
+  border: 2px solid #aaaaaa;
+}
+.recipesComment {
+  background-color: #ffffff9c;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #aaaaaa;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  display: flex;
+  flex-direction: row;
+}
+.recipesComment img {
+  width: 120px;
+  border: 1px solid #aaaaaa85;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.recipesComment img:hover {
+  transform: scale(3);
+}
+.recipesComment p {
+  word-break: break-all;
+}
+.likesContentNoTokken {
+  text-align: end;
+}
+.editContent {
+  text-align: end;
+}
+.editContent a {
+  text-decoration: none;
+}
+.editContent button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid blue;
+  color: blue;
+  border-radius: 5px;
+}
+.editContent button:hover {
+  background-color: blue;
+}
+.editContent a:hover {
+  color: rgb(255, 255, 255);
+}
+.recipesEditImg {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #recipesIdContent {
+    width: 750px;
+  }
+  .recipesIdTitle h3 {
+    font-size: 20px;
+  }
+  .recipesComment p,
+  .recipesIdConteiner p,
+  .preparationRecipes p,
+  .homeIngridients p,
+  .number,
+  .NumberServings p,
+  .servings {
+    font-size: 16px;
+  }
+  .recipesIdelementIngridient h6 {
+    font-size: 17px;
+  }
+  .NumberServings {
+    margin-right: 25px;
+  }
+  .recipesComment img {
+    width: 110px;
+  }
+  .recipesComment img:hover {
+    transform: scale(2.5);
+  }
+  .recipesIdConteiner img {
+    width: 30%;
+  }
+  .NumberServings button {
+    width: 30px;
+    height: 25px;
+  }
+  .NumberServings input {
+    width: 45px;
+    height: 25px;
+  }
+  .number {
+    width: 45px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  #recipesIdContent {
+    width: 550px;
+  }
+  .recipesIdTitle h3 {
+    font-size: 18px;
+  }
+  .recipesComment p,
+  .recipesIdConteiner p,
+  .preparationRecipes p,
+  .homeIngridients p,
+  .number,
+  .NumberServings p,
+  .servings {
+    font-size: 15px;
+  }
+  .recipesIdelementIngridient h6 {
+    font-size: 16px;
+  }
+  .containerMenu button {
+    font-size: 14px;
+  }
+  .NumberServings {
+    margin-right: 18px;
+  }
+  .recipesComment img {
+    width: 100px;
+  }
+  .recipesComment img:hover {
+    transform: scale(2);
+  }
+  .recipesIdConteiner img {
+    width: 30%;
+  }
+  .NumberServings button {
+    width: 30px;
+    height: 25px;
+  }
+  .NumberServings input {
+    width: 45px;
+    height: 25px;
+  }
+  .number {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .containerMenu button {
+    font-size: 14px;
+  }
+  #recipesIdContent {
+    width: 400px;
+  }
+  .recipesIdTitle h3 {
+    font-size: 17px;
+  }
+  .recipesComment p,
+  .recipesIdConteiner p,
+  .preparationRecipes p,
+  .homeIngridients p,
+  .number,
+  .NumberServings p,
+  .servings {
+    font-size: 13px;
+  }
+  .recipesIdelementIngridient h6 {
+    font-size: 15px;
+  }
+  .containerMenu button {
+    font-size: 13px;
+  }
+  .NumberServings {
+    margin-right: 20px;
+  }
+  .recipesComment img {
+    width: 90px;
+  }
+  .recipesComment img:hover {
+    transform: scale(1.5);
+  }
+  .recipesIdConteiner img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .NumberServings button {
+    width: 30px;
+    height: 25px;
+  }
+  .NumberServings input {
+    width: 45px;
+    height: 25px;
+    margin-bottom: 2px;
+  }
+  .number {
+    width: 35px;
+  }
+}
+

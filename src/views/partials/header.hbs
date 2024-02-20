@@ -1,0 +1,108 @@
+{{#if tokenIsPresent}}
+<div class="navHeaderContainer">
+    <div class="navContent">
+        <div class="headerImages">
+            <a href="/"><img src="/1675147251_top-fon-com-p-fon-dlya-prezentatsii-povar-konditer-65.png" alt=""></a>
+        </div>
+        <div class="centerImages">
+            <a href="/"><img src="/book.jpg" alt=""></a>
+        </div>
+        <div class="menuRegistr">
+            <a href="/">На главную</a>
+            {{#ifEquals role 'User'}}
+            <a href="/create">Добавить рецепт</a>
+            {{else ifEquals role 'Administrator'}}
+            <a href="/admin">Для администратора</a>
+            {{/ifEquals}}
+            <a href="/" class="exitToken">Выйти</a></button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="contentMainMenu">
+        <div class="containerMenu">
+            <img src="/myaso.png" alt="">
+            <button class="categorySearch" data-category="meat">мясо</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/kuritsa.png" alt="">
+            <button class="categorySearch" data-category="bird">птица</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/riba-yeda.jpg" alt="">
+            <button  class="categorySearch"data-category="fish">рыба</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/sup-50.jpg" alt="">
+            <button class="categorySearch" data-category="soups">супы</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/polza-i-vred-ovsyanki-na-zavtrak.webp" alt="">
+            <button class="categorySearch" data-category="porridge">каши</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/salata-detskii-10.png" alt="">
+            <button class="categorySearch" data-category="salads">салаты</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/ovoshchnie-kulturi-kartinki-arti-1.jpg" alt="">
+            <button class="categorySearch" data-category="vegetables">овощи</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/hleb-kartinki-dlya-detei-30.png" alt="">
+            <button class="categorySearch" data-category="bakery">выпечка</button>
+        </div>
+    </div>
+</div>
+{{else}}
+<div class="navHeaderContainer">
+    <div class="navContent">
+        <div class="headerImages">
+            <a href="/"><img src="/1675147251_top-fon-com-p-fon-dlya-prezentatsii-povar-konditer-65.png" alt=""></a>
+        </div>
+        <div class="centerImages">
+            <a href="/"><img src="/book.jpg" alt=""></a>
+        </div>
+        <div class="menuRegistr">
+            <a href="/">На главную</a>
+            <a href="/registration">Регистрация</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="contentMainMenu">
+        <div class="containerMenu">
+            <img src="/myaso.png" alt="">
+            <button class="categorySearch" data-category="meat">мясо</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/kuritsa.png" alt="">
+            <button class="categorySearch" data-category="bird">птица</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/riba-yeda.jpg" alt="">
+            <button  class="categorySearch"data-category="fish">рыба</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/sup-50.jpg" alt="">
+            <button class="categorySearch" data-category="soups">супы</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/polza-i-vred-ovsyanki-na-zavtrak.webp" alt="">
+            <button class="categorySearch" data-category="porridge">каши</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/salata-detskii-10.png" alt="">
+            <button class="categorySearch" data-category="salads">салаты</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/ovoshchnie-kulturi-kartinki-arti-1.jpg" alt="">
+            <button class="categorySearch" data-category="vegetables">овощи</button>
+        </div>
+        <div class="containerMenu">
+            <img src="/hleb-kartinki-dlya-detei-30.png" alt="">
+            <button class="categorySearch" data-category="bakery">выпечка</button>
+        </div>
+    </div>
+</div>
+{{/if}}

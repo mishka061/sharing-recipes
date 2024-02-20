@@ -1,0 +1,65 @@
+<div class="container-fluid" id="recipesIdContent">
+    <div class="recipesIdelementIngridient">
+        <div class="recipesIdTitle">
+            <h3>{{recipesOneId.title}}</h3>
+        </div>
+        <div class="recipesIdConteiner">
+            <img src="/{{recipesOneId.img}}" alt="">
+            <p>{{recipesOneId.description}}</p>
+        </div>
+        <div class="preparationRecipes">
+            <p>{{recipesOneId.preparation}}</p>
+        </div>
+        <h6>Состав/ Ингредиенты:</h6>
+        {{#each recipesOneId.ingridients}}
+        <div class="homeIngridients">
+            <div class="ingridientsTitle">
+                <p>{{name}}</p>
+            </div>
+            <div class="ingridientsDefis">
+                <p></p>
+            </div>
+            <div class="ingridientsNumber">
+                <input class="number" value="{{number}}"></input>
+                <p>{{measurement}}</p>
+            </div>
+        </div>
+        {{/each}}
+        <div class="NumberServings">
+            <div>
+                <p>Количество порций: </p>
+            </div>
+            <div>
+                <input value="{{recipesOneId.servings}}" class="servings">
+                <button class="plus">+</button>
+                <button class="minus">-</button>
+            </div>
+        </div>
+
+    </div>
+    {{#each recipesOneId.comments}}
+    <div class="recipesComment">
+        <img src="/{{imgComment}}" alt="">
+        <p>
+            {{textComment}}
+        </p>
+    </div>
+    {{/each}}
+    <div class="commentAdd"></div>
+    {{#if tokenIsPresent}}
+    <button class="textCommentBtn">Написать комментарий</button>
+    <div class="commentForm" style="display: none;">
+        <p>Добавить текст</p>
+        <textarea name="comment" class="textAreaCommit"> </textarea>
+        <div>
+            <p>Добавить одну фотографию</p>
+            <input type="file" name="image" class="recipes-form-image" multiple />
+        </div>
+        <input type="submit" class="textAreaSubmit" value="Отправить">
+    </div>
+    {{/if}}
+</div>
+
+
+
+

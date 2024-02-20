@@ -1,0 +1,52 @@
+{{#if arrRecipes}}
+{{#if lunch}}
+<div class="categoryAddLunch">
+    <h1>Категория: {{lunch}}</h1>
+</div>
+{{/if}}
+{{#if category}}
+<div class="categoryAddLunch">
+    <h1>Категория: {{category}}</h1>
+</div>
+{{/if}}
+<div class="container-fluid" id="homeContent">
+    {{#each arrRecipes}}
+    <div class="elementIngridient">
+        <div class="homeTitle">
+            <h4>{{title}}</h4>
+        </div>
+        <div class="homeConteiner">
+            <img src="/{{img}}" alt="">
+            <p>{{description}} <button class="fullCategoryDescription" data-id="{{_id}}" data-title="{{title}}">читать далее...</button> </p>
+        </div>
+        <div class="likesContentNoTokken">
+            <p class="homeLoginNoTokken">{{login}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{/if}}
+
+
+
+
+
+
+
+
+
+{{!-- <form action="/recipes/{{recipes._id}}" method="POST" id="formAddComment" style="display: none;"
+    enctype="multipart/form-data">
+    <input type="hidden" name="action" value="comment">
+    <div class="commentForm">
+        <input type="hidden" name="recipesId" value="{{recipes._id}}">
+        <p>Добавить текст</p>
+        <textarea name="comment" class="textAreaCommit"> </textarea>
+
+        <div>
+            <p>Добавить фотографию</p>
+            <input type="file" name="image" class="recipes-form-image" multiple />
+        </div>
+        <input type="submit" class="textAreaSubmit" value="Отправить">
+    </div>
+</form> --}}

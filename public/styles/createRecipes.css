@@ -1,0 +1,131 @@
+.createRecipesContainer{
+    margin: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border:2px solid #aaaaaa;
+}
+.article-title-input,
+.article-description-textarea{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.article-details p{
+    margin-bottom: 0;
+}
+.btnAddIngridient,
+.btnEditIngridient,
+.submit-button{
+    margin: 10px 0;
+    border: 2px solid blue;
+    color: blue;
+    border-radius: 5px;
+}
+.btnAddIngridient:hover,
+.btnEditIngridient:hover,
+.submit-button:hover{
+    background-color:  blue;
+    color: rgb(255, 255, 255);
+}
+.removeIngtidients{
+    margin: 10px 0;
+    border: 2px solid rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    border-radius: 5px;
+}
+.removeIngtidients:hover{
+    background-color:  rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.btnAddIngridient,
+.btnEditIngridient,
+.submit-button{
+    padding: 3px 10px;
+    width: 40%;
+    text-align: start;
+}
+.imgDellSelect{
+    width: 40px;
+}
+.divSelect{
+    padding: 10px 0;
+    border-bottom: 2px solid blue;
+}
+.contentNumber{
+    display: flex;
+    flex-direction: row;
+}
+#description{
+    width: 100%;
+}
+.numberCategory{
+    background-color: #967272;
+}
+#ingredientSelect{
+    width: 50%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.numberSelect select{
+    width: 100%;
+    padding: 2px;
+}
+.numberInput{
+   padding-left: 30px;
+}
+.numberInput input{
+    width: 51%;
+}
+.h1-title{
+    color: blue;
+    border-bottom: 1px dotted blue;
+    padding-bottom: 10px;
+}
+.categoryRecipes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px dotted blue;
+    padding-bottom: 10px;
+}
+.selectsCategory{
+    margin-right: 10px;
+    color: blue;
+}
+.selectsCategories{
+    width: 15%;
+    color: blue;
+}
+.selectsCategories input{
+    width: 100%;
+    border: 2px solid blue;
+    padding: 2px;
+    border-radius: 5px;
+}
+.h6categoryRecipes{
+    border-top: 1px dotted blue;
+    padding-top: 10px;
+}
+.selectsCategory select{
+    width: 100%;
+    border: 2px solid blue;
+    padding: 2px;
+    border-radius: 5px;
+}
+.fileCategory{
+    color: blue;
+    width: 23%;
+}
+.categoryFile{
+    border-bottom: 1px dotted blue;
+    padding-bottom: 10px;
+}
+input[type=file]{
+    color:transparent;
+    border: 2px solid blue;
+    border-radius: 5px;
+    width: 100%;
+}
